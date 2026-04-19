@@ -1,0 +1,17 @@
+/*
+ * Board-specific overlay for Seeeduino XIAO BLE (Prospector Dongle).
+ * Removes RGB underglow and disables the WS2812 node since the Prospector
+ * Dongle does not have RGB LEDs.
+ * Display (Waveshare LCD ST7789V) and SPI3 pins are handled by the
+ * prospector_adapter shield.
+ */
+
+/ {
+    chosen {
+        /delete-property/ zmk,underglow;
+    };
+};
+
+&led_strip {
+    status = "disabled";
+};

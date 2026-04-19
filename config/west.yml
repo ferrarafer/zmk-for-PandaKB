@@ -19,6 +19,8 @@ manifest:
       url-base: https://github.com/infely
     - name: penguinchat
       url-base: https://github.com/penguinchat
+    - name: carrefinho
+      url-base: https://github.com/carrefinho
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -49,5 +51,8 @@ manifest:
     - name: zmk-for-PandaKB.com-
       remote: penguinchat
       revision: PandaKB_Lily58
+    - name: prospector-zmk-module
+      remote: carrefinho
+      revision: main
   self:
     path: config
