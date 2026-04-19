@@ -3,11 +3,9 @@ id: PandaKB.com_Corne
 name: PandaKB.com_Corne
 type: shield
 url: https://pandakb.com/
-requires: [nice!nano]
-exposes: [i2c_oled]
+requires: [seeeduino_xiao_ble]
 features:
   - keys
-  - display
   - studio
   - dongle
 siblings:
