@@ -1,18 +1,18 @@
 include:
   # Dongle central (XIAO BLE + Prospector display)
   - board: xiao_ble//zmk
-    shield: Corne_dongle_central prospector_adapter
+    shield: corne_dongle_central prospector_adapter
     snippet: studio-rpc-usb-uart
     artifact-name: corne_central_dongle
 
   # Left peripheral (nice!nano v2)
   - board: nice_nano@2.0.0//zmk
-    shield: Corne_dongle_left
+    shield: corne_dongle_left
     artifact-name: corne_peripheral_left
 
   # Right peripheral (nice!nano v2)
   - board: nice_nano@2.0.0//zmk
-    shield: Corne_dongle_right
+    shield: corne_dongle_right
     artifact-name: corne_peripheral_right
 
   # Settings reset (dongle)

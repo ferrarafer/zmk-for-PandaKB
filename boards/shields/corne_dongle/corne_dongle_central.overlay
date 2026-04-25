@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "Corne_dongle.dtsi"
+#include "corne_dongle.dtsi"
 
 / {
     chosen {

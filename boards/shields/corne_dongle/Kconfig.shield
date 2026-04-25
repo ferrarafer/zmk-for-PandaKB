@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MIT
 
 config SHIELD_CORNE_DONGLE_CENTRAL
-    def_bool $(shields_list_contains,Corne_dongle_central)
+    def_bool $(shields_list_contains,corne_dongle_central)
 
 config SHIELD_CORNE_DONGLE_LEFT
-    def_bool $(shields_list_contains,Corne_dongle_left)
+    def_bool $(shields_list_contains,corne_dongle_left)
 
 config SHIELD_CORNE_DONGLE_RIGHT
-    def_bool $(shields_list_contains,Corne_dongle_right)
+    def_bool $(shields_list_contains,corne_dongle_right)

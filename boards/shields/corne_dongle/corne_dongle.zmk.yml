@@ -9,6 +9,6 @@ features:
   - studio
   - dongle
 siblings:
-  - Corne_dongle_central
-  - Corne_dongle_left
-  - Corne_dongle_right
+  - corne_dongle_central
+  - corne_dongle_left
+  - corne_dongle_right

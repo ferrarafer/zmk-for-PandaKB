@@ -4,7 +4,11 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "Corne_dongle.dtsi"
+#include "corne_dongle.dtsi"
+
+&default_transform {
+    col-offset = <6>;
+};
 
 &kscan0 {
     compatible = "zmk,kscan-gpio-matrix";
@@ -17,11 +21,11 @@
         , <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
     col-gpios
-        = <&pro_micro 21 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 20 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 19 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 18 GPIO_ACTIVE_HIGH>
+        = <&pro_micro 14 GPIO_ACTIVE_HIGH>
         , <&pro_micro 15 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 14 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 18 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 19 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 20 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 21 GPIO_ACTIVE_HIGH>
         ;
 };
