@@ -3,18 +3,24 @@ include:
   - board: xiao_ble//zmk
     shield: Corne_dongle_central prospector_adapter
     snippet: studio-rpc-usb-uart
-    artifact-name: Corne_central_dongle
+    artifact-name: corne_central_dongle
 
   # Left peripheral (nice!nano v2)
   - board: nice_nano@2.0.0//zmk
     shield: Corne_dongle_left
-    artifact-name: Corne_peripheral_left
+    artifact-name: corne_peripheral_left
 
   # Right peripheral (nice!nano v2)
   - board: nice_nano@2.0.0//zmk
     shield: Corne_dongle_right
-    artifact-name: Corne_peripheral_right
+    artifact-name: corne_peripheral_right
 
-  # Settings reset
+  # Settings reset (dongle)
   - board: xiao_ble//zmk
     shield: settings_reset
+    artifact-name: settings_reset_dongle
+
+  # Settings reset (peripherals)
+  - board: nice_nano@2.0.0//zmk
+    shield: settings_reset
+    artifact-name: settings_reset_peripheral
