@@ -21,7 +21,7 @@ jobs:
         run: |
           mkdir -p images
           keymap parse -z boards/shields/corne_dongle/corne_dongle.keymap > keymap.yaml
-          keymap draw keymap.yaml > images/corne_keymap.svg
+          keymap draw -q crkbd/rev1 keymap.yaml > images/corne_keymap.svg
           rm keymap.yaml
 
       - name: Commit SVG
