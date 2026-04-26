@@ -1,0 +1,32 @@
+name: Draw keymap
+
+on:
+  push:
+    paths:
+      - 'boards/shields/corne_dongle/corne_dongle.keymap'
+  workflow_dispatch:
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install keymap-drawer
+        run: pip install keymap-drawer
+
+      - name: Parse and draw keymap
+        run: |
+          mkdir -p images
+          keymap parse -z boards/shields/corne_dongle/corne_dongle.keymap > keymap.yaml
+          keymap draw keymap.yaml > images/corne_keymap.svg
+          rm keymap.yaml
+
+      - name: Commit SVG
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add images/corne_keymap.svg
+          git diff --staged --quiet || (git commit -m "Update keymap image" && git push)
