@@ -50,18 +50,21 @@
 
                 combo_tab {
                         timeout-ms = <COMBO_TIMEOUT>;
+                        layers = <0>;
                         key-positions = <1 2>;
                         bindings = <&kp TAB>;
                 };
 
                 combo_space {
                         timeout-ms = <COMBO_TIMEOUT>;
+                        layers = <0>;
                         key-positions = <15 16>;
                         bindings = <&kp SPACE>;
                 };
 
                 combo_esc {
                         timeout-ms = <COMBO_TIMEOUT>;
+                        layers = <0>;
                         key-positions = <19 20>;
                         bindings = <&kp ESC>;
                 };
