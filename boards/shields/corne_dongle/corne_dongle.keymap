@@ -15,6 +15,9 @@
 
 #define COMBO_TIMEOUT 75
 
+#define HYPER LS(LC(LA(LGUI)))
+#define MEH   LS(LC(LALT))
+
 / {
         behaviors {
                 hml: home_row_mod_left {
